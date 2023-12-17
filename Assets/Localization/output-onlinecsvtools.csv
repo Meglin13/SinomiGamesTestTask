@@ -1,0 +1,34 @@
+﻿Key,Description,Standard,EN
+"SAY.Flowchart.81.Ригель ",,"Арген, я тебя так рада видеть.","Argen, I'm so glad to see you."
+SAY.Flowchart.82.Арген,,Давно не виделись. Я скучал по тебе.,Long time no see. I've missed you.
+SAY.Flowchart.83.Автор,,"Арген прижал к себе Ригель и нежно провёл пальцами по ее спине. ",Argen hugged Rigel to him and gently ran his fingers along her back.
+SAY.Flowchart.84.Автор,,"Девушка коснулась его губ поцелуем, пытаясь в своей памяти запечатлеть этот момент.","The girl touched his lips with a kiss, trying to capture this moment in her memory."
+SAY.Flowchart.85.Арген,,Знаешь…  Я давно хотел тебе сказать кое-что…,You know…  I've been wanting to tell you something for a long time.…
+"SAY.Flowchart.86.Ригель ",,Я тоже…,Me too…
+SAY.Flowchart.87.Арген,,Я…,I…
+SAY.Flowchart.88.Автор,,Внезапно рык монстра тут же оглушил влюбленных.,"Suddenly, the monster's roar immediately stunned the lovers."
+SAY.Flowchart.89.Автор,,Ригель вздрогнула и спряталась за спину Аргена.,Rigel shuddered and hid behind Argen.
+SAY.Flowchart.90.Автор,,"Арген схватил ружье и прицелился. ",Argen grabbed the gun and took aim.
+"SAY.Flowchart.91.Ригель ",,Боже мой!,Oh my god!
+SAY.Flowchart.92.Автор,,Руки дрожали и мешали сосредоточиться.,His hands were shaking and made it difficult to concentrate.
+SAY.Flowchart.95.Автор,,Оглушительный выстрел заставил Ригель прикрыть уши в испуге.,A deafening shot made Rigel cover her ears in fright.
+SAY.Flowchart.94.Автор,,"Пороховой дым заполнил комнату, но вскоре развеялся. ","Gunpowder smoke filled the room, but soon dissipated."
+SAY.Flowchart.93.Автор,,"Поверженный монстр лежал у их ног, истекая кровью.","The defeated monster lay at their feet, bleeding."
+"SAY.Flowchart.96.Ригель ",,{flash=0.3}А разве этот диалог был в {b}игре{/b}?,{flash=0.3}Was this dialogue in the {b}game{/b}?
+SAY.Flowchart.97.Арген,,"Боюсь, что нет.",I'm afraid it wasn't.
+"SAY.Flowchart.98.Ригель ",,Хочу на свежий воздух.,I want to get some fresh air.
+SAY.Flowchart.100.Автор,,"Феникс увидел друзей и тут же обеспокоенно их оглядел. ",Phoenix saw his friends and immediately looked at them worriedly.
+SAY.Flowchart.101.Феникс,,Вы целы? Что за выстрелы я {color=green}слышал{/color}?,Are you okay? What kind of shots did I {color=green}hear{/color}?
+SAY.Flowchart.103.Арген,,Я разнес всех этих монстров в кучу!,I smashed all these monsters into a pile!
+"SAY.Flowchart.104.Ригель ",,"Но Арген, он же был всего один…","But Argen, there was only one…"
+SAY.Flowchart.105.Арген,,"Наверное ты не заметила, ты ведь спряталась за моей спиной.","You probably didn't notice, because you hid behind my back."
+SAY.Flowchart.106.Феникс,,"Пытаешься как обычно произвести впечатление, Арген. Ха-ха.","Trying to make an impression as usual, Argen. Ha-ha."
+SAY.Flowchart.107.Арген,,А ты не изменился. Мог бы подыграть.,And you haven't changed. I could have played along.
+SAY.Flowchart.108.Автор,,"Старые добрые друзья посмотрели друг на друга и рассмеялись. ",The good old friends looked at each other and laughed.
+SAY.Flowchart.33.,,Выберите язык,Select Language
+MENU.Flowchart.34,,Русский,Русский
+MENU.Flowchart.35,,English,English
+CHARACTER.Феникс,,Феникс,"Phoenix "
+CHARACTER.Арген,,Арген,Argen
+"CHARACTER.Ригель ",,"Ригель ",Rigel
+CHARACTER.Автор,,Автор,Author
