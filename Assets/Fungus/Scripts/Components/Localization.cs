@@ -308,7 +308,7 @@ namespace Fungus
             }
 
             // Build CSV header row and a list of the language codes currently in use
-            string csvHeader = "Key,Description,Standard";
+            string csvHeader = "Key;Description;Standard";
             var languageCodes = new List<string>();
             var values = textItems.Values;
             foreach (var textItem in values)
@@ -318,7 +318,7 @@ namespace Fungus
                     if (!languageCodes.Contains(languageCode))
                     {
                         languageCodes.Add(languageCode);
-                        csvHeader += "," + languageCode;
+                        csvHeader += ";" + languageCode;
                     }
                 }
             }
@@ -332,19 +332,19 @@ namespace Fungus
                 TextItem textItem = textItems[stringId];
 
                 string row = CSVSupport.Escape(stringId);
-                row += "," + CSVSupport.Escape(textItem.description);
-                row += "," + CSVSupport.Escape(textItem.standardText);
+                row += ";" + CSVSupport.Escape(textItem.description);
+                row += ";" + CSVSupport.Escape(textItem.standardText);
 
                 for (int i = 0; i < languageCodes.Count; i++)
                 {
                     var languageCode = languageCodes[i];
                     if (textItem.localizedStrings.ContainsKey(languageCode))
                     {
-                        row += "," + CSVSupport.Escape(textItem.localizedStrings[languageCode]);
+                        row += ";" + CSVSupport.Escape(textItem.localizedStrings[languageCode]);
                     }
                     else
                     {
-                        row += ",";
+                        row += ";";
                         // Empty field
                     }
                 }
