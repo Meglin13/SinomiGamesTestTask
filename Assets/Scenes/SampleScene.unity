@@ -291,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -300, y: 0}
+  m_AnchoredPosition: {x: -250, y: 0}
   m_SizeDelta: {x: 1000, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &110955702
@@ -1434,7 +1434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchoredPosition: {x: 250, y: 0}
   m_SizeDelta: {x: 1000, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &662937564
@@ -2545,9 +2545,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1174236805}
+  - {fileID: 1858658363}
   - {fileID: 673538433}
   - {fileID: 1445245967}
-  - {fileID: 1858658363}
   m_Father: {fileID: 1769888806}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167769869
@@ -2743,7 +2743,7 @@ ParticleSystem:
   lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
-  cullingMode: 0
+  cullingMode: 2
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
@@ -7568,6 +7568,11 @@ GameObject:
   - component: {fileID: 1174421801}
   - component: {fileID: 1174421804}
   - component: {fileID: 1174421803}
+  - component: {fileID: 1174421805}
+  - component: {fileID: 1174421806}
+  - component: {fileID: 1174421808}
+  - component: {fileID: 1174421807}
+  - component: {fileID: 1174421809}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -7588,7 +7593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 176.62927, y: 366.51077}
+  scrollPos: {x: 48.629272, y: 427.51077}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 656
@@ -7600,9 +7605,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1174421742}
+  - {fileID: 1174421790}
   selectedCommands:
-  - {fileID: 1174421719}
+  - {fileID: 1174421807}
   variables: []
   description: 
   stepPause: 0
@@ -8294,9 +8299,9 @@ MonoBehaviour:
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 73ef5027b0e3fe549b5f796d49ef90bb, type: 3}
   offset: 0
-  fromPosition: {fileID: 1167769870}
-  toPosition: {fileID: 110955701}
-  facing: 2
+  fromPosition: {fileID: 751933394}
+  toPosition: {fileID: 662937563}
+  facing: 1
   useDefaultSettings: 1
   fadeDuration: 0.5
   moveDuration: 1
@@ -8622,9 +8627,9 @@ MonoBehaviour:
   replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 73ef5027b0e3fe549b5f796d49ef90bb, type: 3}
   offset: 0
-  fromPosition: {fileID: 662937563}
-  toPosition: {fileID: 751933394}
-  facing: 1
+  fromPosition: {fileID: 110955701}
+  toPosition: {fileID: 662937563}
+  facing: 2
   useDefaultSettings: 0
   fadeDuration: 0.1
   moveDuration: 0.5
@@ -8679,7 +8684,7 @@ MonoBehaviour:
   shiftOffset: {x: 0, y: 0}
   move: 1
   shiftIntoPlace: 0
-  waitUntilFinished: 0
+  waitUntilFinished: 1
 --- !u!114 &1174421741
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8719,8 +8724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 130.33961
-    y: 74.255035
+    x: 355.3396
+    y: -25.744965
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -8737,6 +8742,7 @@ MonoBehaviour:
   - {fileID: 1174421740}
   - {fileID: 1174421739}
   - {fileID: 1174421738}
+  - {fileID: 1174421809}
   - {fileID: 1174421737}
   - {fileID: 1174421736}
   - {fileID: 1174421735}
@@ -8763,6 +8769,7 @@ MonoBehaviour:
   - {fileID: 1174421714}
   - {fileID: 1174421713}
   - {fileID: 1174421712}
+  - {fileID: 1174421806}
   suppressAllAutoSelections: 0
 --- !u!114 &1174421743
 MonoBehaviour:
@@ -10045,7 +10052,9 @@ MonoBehaviour:
   - {fileID: 1174421768}
   - {fileID: 1174421767}
   - {fileID: 1174421794}
+  - {fileID: 1174421808}
   - {fileID: 1174421793}
+  - {fileID: 1174421807}
   - {fileID: 1174421766}
   - {fileID: 1174421765}
   - {fileID: 1174421764}
@@ -10073,6 +10082,7 @@ MonoBehaviour:
   - {fileID: 1174421744}
   - {fileID: 1174421801}
   - {fileID: 1174421802}
+  - {fileID: 1174421805}
   - {fileID: 1174421743}
   suppressAllAutoSelections: 0
 --- !u!114 &1174421791
@@ -10280,7 +10290,7 @@ MonoBehaviour:
     floatVal: 0.5
 --- !u!114 &1174421801
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10310,7 +10320,7 @@ MonoBehaviour:
     floatVal: 0
 --- !u!114 &1174421802
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10331,7 +10341,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1174421803
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10361,7 +10371,7 @@ MonoBehaviour:
     floatVal: 0.5
 --- !u!114 &1174421804
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10380,6 +10390,117 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1174421805
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174421569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 238
+  indentLevel: 0
+  duration: 3
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
+--- !u!114 &1174421806
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174421569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 239
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1174421616}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1174421807
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174421569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 241
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
+--- !u!114 &1174421808
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174421569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 240
+  indentLevel: 0
+  duration: 0.3
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
+--- !u!114 &1174421809
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174421569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 242
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 8231348459239371041}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 73ef5027b0e3fe549b5f796d49ef90bb, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 662937563}
+  facing: 1
+  useDefaultSettings: 0
+  fadeDuration: 0.1
+  moveDuration: 0.5
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
 --- !u!1 &1202479715
 GameObject:
   m_ObjectHideFlags: 0
@@ -11049,13 +11170,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858658362}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09056366, y: 0.9958907, z: -0, w: 0}
-  m_LocalPosition: {x: 472, y: 449.6, z: 11.6}
+  m_LocalRotation: {x: 0.19648652, y: 0.9805066, z: -0, w: 0}
+  m_LocalPosition: {x: 474.9, y: 453.1, z: 11.6}
   m_LocalScale: {x: 7.89, y: 7.89, z: 7.89}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1136361015}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 10.392}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 22.663}
 --- !u!199 &1858658364
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -11141,7 +11262,7 @@ ParticleSystem:
   lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
-  cullingMode: 0
+  cullingMode: 2
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
@@ -11213,7 +11334,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -11384,8 +11505,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 3
-      minScalar: 3
+      scalar: 25
+      minScalar: 30
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11437,8 +11558,8 @@ ParticleSystem:
     startSizeY:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 50
-      minScalar: 70
+      scalar: 100
+      minScalar: 150
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -12588,11 +12709,11 @@ ParticleSystem:
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -0.1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
